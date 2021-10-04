@@ -1,0 +1,1 @@
+For the quiz1 CSS part. Firstly, i open the quiz1.html, and open my own project-page in lab3, so i follw the same frame as lab3, the html that i wrote. I use the link to the quiz1.html, to connect with my quiz1 css, and i put all the id and tags in the css, to make a frame for each of them. Finally, i get successful.
