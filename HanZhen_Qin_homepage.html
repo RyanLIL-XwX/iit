@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+      <title>Project_Page(database)</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <link href="http://www.rpi.edu/favicon.ico" type="image/ico" rel="shortcut icon"/>
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <link rel="stylesheet" href="/resources/demos/style.css">
+      <script type="text/javascript" src="resources/jquery-3.1.1.min.js"></script>
+      <script type="text/javascript" src="homepage.js"></script>
+      <script type="text/javascript" src="lab9.js"></script>
+      <style type="text/css">
+      body{
+            font-family: "Times New Roman", serif;
+      }
+      head{
+            font-family: "IBM Plex Mono", monospace;
+      }
+      footer{
+            font-family: Didot, serif;
+            background-color: lightblue;
+            border-top: 10px black dotted; 
+            border-right: 5px pink solid;
+            border-bottom: 10px black dotted;
+            border-left: 5px pink solid;
+      }
+      p{
+            font-family: "Gill Sans", sans-serif;
+      }
+      #ITWS_lab{
+            background-color: lightblue;
+            color: white;
+            border-top: 10px black dotted; 
+            border-right: 5px pink solid;
+            border-bottom: 10px black dotted;
+            border-left: 5px pink solid;
+      }
+      .file{
+            border-top: 10px black dotted; 
+            border-right: 5px pink solid;
+            border-bottom: 10px black dotted;
+            border-left: 5px pink solid;
+      }
+      h3 a:hover{
+      background-color: black;
+      }
+      button{
+            padding: 10px 15px;
+            color: white;
+            background-color: pink;
+      }
+      #menu{
+            border-top: 10px white dotted; 
+            border-right: 5px white solid;
+            border-bottom: 10px white dotted;
+            border-left: 5px white solid;
+      }
+      #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+      #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+      #sortable li span { position: absolute; margin-left: -1.3em; }
+      ol {
+            list-style-image: url("fl.jpg");
+      }
+      </style>
+  </head>
+<body>
+      <footer>
+            <p>HanZhen Qin</p>
+            <p><button type="button" id="studentInfo">Info</button></p>
+      </footer>
+      <div id="ITWS_lab">
+            <button><a href="#" id="hideT">Hide Text</a></button>
+            <button><a href="#" id="showT">Show Text</a></button>
+            <h1>labs</h1>
+            <p><button type="button" id="basicInfo">Info</button></p>
+            <h2>Intro ITWS ------ HanZhen Qin</h2>
+            <p> You will find all the labs in this semester in the following links</p>
+            <div class="file">
+                  <ol id="selectable">
+                  <ul id="menu">
+                  <div class="l1">
+                        <br>
+                        <p>LAB 2</p>
+                        <p><button type="button" id="basicInfo2">Info</button></p>
+                        <p>Design a web about your resume</p>
+                        <li class="ui-widget-content">1
+                        <h3><a href="../document/ITWS1100-W2C2-Lab02-HTML/ITWS1100-Lab2-HTML-Instructions.html">lab2_guildline</a></h3>
+                        <ul><h3><a href="../Lab2/ITWS_Han_Zhen_Qin_lab2.html">lab2 (HTML/CSS)</a></h3>
+                        <h3><a href="../document/ITWS1100-W2C2-Lab02-HTML/Intro ITWS - Lab 2 - HTML - Rubric.html">lab2_rubric</a></h3></ul>
+                        </li>
+                  </div>
+                  <div class="l2">
+                        <br>
+                        <p>LAB 3</p>
+                        <p><button type="button" id="basicInfo3">Info</button></p>
+                        <p>Building your own website</p>
+                        <li class="ui-widget-content">2
+                        <h3><a href="../document/ITWS1100-W3C2-Lab3-Website/Intro ITWS - Lab 3 - Website - Instructions.html">lab3_guildline</a></h3>
+                        <ul><h3><a href="../Lab3/HanZhen_Qin_lab3.css">lab3 (Website) -> CSS</a></h3>
+                        <h3><a href="../Lab3/HanZhen_Qin_DATA.html">lab3 (Website) -> project_page</a></h3>
+                        <h3><a href="../Lab3/HanZhen_Qin_lab3.html">lab3 (Website) -> main_page</a></h3></ul>
+                        </li>
+                  </div>
+                  <div class="l3">
+                        <br>
+                        <p>LAB 4</p>
+                        <p><button type="button" id="basicInfo4">Info</button></p>
+                        <p>Create two XML files, one RSS 2.0 and one Atom 1.0</p>
+                        <li class="ui-widget-content">3
+                        <h3><a href="../document/ITWS1100-Lab4-RSS&Atom/IntroITWS-Lab4-RSS&Atom-Instructions.html">lab4_guildline</a></h3>
+                        <ul><h3><a href="../document/ITWS1100-Lab4-RSS&Atom/Intro ITWS - Lab 4 - RSS&Atom - TemplateAtom.xml">templateAtom</a></h3>
+                        <h3><a href="../document/ITWS1100-Lab4-RSS&Atom/Intro ITWS - Lab 4 - RSS&Atom - TemplateRSS.xml">templateRSS</a></h3>
+                        <h3><a href="../document/ITWS1100-Lab4-RSS&Atom/RPIeventsFeed-AtomExample.xml">AtomExample</a></h3>
+                        <h3><a href="../document/ITWS1100-Lab4-RSS&Atom/Intro ITWS-Lab4-RSS&Atom-AtomExample-TheEconomist-ScienceAndTechnologyBlog-Oct17.xml">CSSExample</a></h3>
+                        <h3><a href="../Lab4/HanZhen_Qin_Atom.RSS">lab4 (XML) -> Atom_1.0</a></h3>
+                        <h3><a href="../Lab4/HanZhen_Qin.RSS">lab4 (XML) -> RSS_2.0</a></h3>
+                        <h3><a href="../Lab4/HanZhen_Qin_lab4.html">lab4 (XML) -> project_page</a></h3></ul>
+                        </li>
+                  </div>
+                  <div class="l5">
+                        <br>
+                        <p>LAB 5</p>
+                        <p><button type="button" id="basicInfo5">Info</button></p>
+                        <p>Work on an HTML form to provide user feedback and validation</p>
+                        <li class="ui-widget-content">4
+                        <h3><a href="../document/ITWS1100-Lab5-JavaScript/lab5Instructions.html">lab5_guildline</a></h3>
+                        <ul><h3><a href="../Lab5/lab5.js">lab5 (Javascript)</a></h3>
+                        <h3><a href="../Lab5/lab5.html">lab5 (HTML)</a></h3>
+                        <h3><a href="../Lab5/lab5.css">lab5 (CSS)</a></h3></ul>
+                        </li>
+                  </div>
+                  <div class="l6">
+                        <br>
+                        <p>LAB 6</p>
+                        <p><button type="button" id="basicInfo6">Info</button></p>
+                        <p>Javascript & Query</p>
+                        <li class="ui-widget-content">5
+                        <h3><a href="../Lab6/lab6.html">lab6 (HTML)</a></h3>
+                        <ul><h3><a href="../Lab6/lab6.js">lab6 (Javascript)</a></h3>
+                        <h3><a href="../Lab6/lab6.css">lab6 (CSS)</a></h3></ul>
+                        </li>
+                  </div>
+                  <div class = "l7">
+                        <br>
+                        <p>LAB 8</p>
+                        <p><button type="button" id="basicInfo8">Info</button></p>
+                        <p>Secure your LAMP stack and try some XSS</p>
+                        <li class="ui-widget-content">6
+                        <h3><a href="../Lab8/lab8instructions.html">lab8_guidline</a></h3>
+                        <ul><h3><a href="../Lab8/lab8.html">lab8 (HTML) -> lab8.html</a></h3>
+                        <h3><a href="../Lab8/lab8.css">lab8 (CSS) -> lab8.css</a></h3>
+                        <h3><a href="../Lab8/lab8.js">lab8 (Javascript) -> lab8.js</a></h3></ul>
+                        </li>
+                  </div>
+                  <div class = "l8">
+                        <br>
+                        <p>LAB 9</p>
+                        <p><button type="button" id="basicInfo9">Info</button></p>
+                        <p>JavaScript, JSON and AJAX</p>
+                        <li class="ui-widget-content">7
+                        <h3><a href="../Lab9/lab9instructions.html">lab9_guidline</a></h3>
+                        <h3><a href="../Lab9/HanZhen_Qin_homepage.html">lab9 (HTML) -> HanZhen_Qin_homepage.html</a></h3>
+                        <h3><a href="../Lab9/lab9jsontemplate.json">lab9 (Json) -> lab9jsontemplate.json</a></h3>
+                        <h3><a href="../Lab9/homepage.js">lab9 (Javascript) -> homepage.js</a></h3>
+                        <h3><a href="../Lab9/lab9.js">lab9 (javascript) -> lab9.js</a></h3>
+                        </li>
+                  </div>
+                  </ul>
+            </ol>
+            </div>
+      </div>
+</body>
+</html>
